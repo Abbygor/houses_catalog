@@ -28,3 +28,6 @@ class Listing(models.Model):
     
     def __str__(self):
         return self.title
+    
+    # Added to we can make queries to the database
+    objects = models.Manager()
