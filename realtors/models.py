@@ -13,3 +13,6 @@ class Realtor(models.Model):
 
     def __str__(self):
         return self.name
+    
+    # Added to we can make queries to the database
+    objects = models.Manager()
