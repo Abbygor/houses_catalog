@@ -41,8 +41,17 @@ def register(request):
 
 def login(request):
     if request.method == 'POST':
-        #REGISTER LOGIN
-        return
+        username = request.POST['username']
+        password = request.POST['password']
+
+        user = auth.authenticate(username=username, password=password)
+        if user is not None:
+            auth.login(request,user)
+            messages.success(request, 'You are now login')
+            return redirect('dashboard')
+        else:
+            messages.error(request, 'Invalid credentials')
+            return redirect('login')
     else:
         return render(request, 'accounts/login.html')
 
