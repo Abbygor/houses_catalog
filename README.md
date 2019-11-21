@@ -1,7 +1,7 @@
 # HOUSES CATALOG
-This project was generated with Python 3.7 and Django 2.2
-This app show a catalog of houses, you can see some information about each house and make an inquiry of them, also you can manage all the information from the AdminPage, other information you can see in the app is the Realtos, the realtor of the month.
-The main app is **houses**
+* This project was generated with Python 3.7 and Django 2.2
+* This app show a catalog of houses, you can see some information about each house and make an inquiry of them, also you can manage all the information from the AdminPage, other information you can see in the app is the Realtos, the realtor of the month.
+* The main app is **houses**
 
 ## How to run this app
 1. Create a virtualenviroment with Python 3.7 and Django 2.2 (optional if you already have instaled in your PC this)
